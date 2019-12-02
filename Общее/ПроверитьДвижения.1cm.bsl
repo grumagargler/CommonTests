@@ -16,9 +16,7 @@
 // **************************************************
 
 стек = Debug.Stack [ Debug.Level - 1 ];
-сценарий = стек.Module;
-версия = стек.IsVersion;
-шаблон = RuntimeSrv.GetSpreadsheet ( сценарий, версия );
+шаблон = RuntimeSrv.GetSpreadsheet ( стек.Module, стек.IsVersion );
 
 // **************************************************
 // Проверяем шаблон
